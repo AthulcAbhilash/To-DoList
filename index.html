@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <img src="logo.png" class="logo">
+    <h1>To-Do List</h1>
+  </div>
+  <div class="topbar-actions">
+    <input type="text" id="searchInput" placeholder="Search tasks...">
+    <button id="clearBtn">Clear</button>
+    <button id="undoBtn">Undo</button>
+  </div>
+</header>
+<main>
+  <div id="taskContainer"></div>
+</main>
+<button id="addBtn">+</button>
+<div id="overlay" class="overlay hidden">
+  <div class="modal">
+    <input id="titleInput" placeholder="Task title">
+    <textarea id="descInput" placeholder="Description (optional)"></textarea>
+    <select id="priorityInput">
+      <option value="low">Low Priority</option>
+      <option value="medium">Medium Priority</option>
+      <option value="high">High Priority</option>
+    </select>
+    <input type="date" id="dateInput">
+    <button id="saveBtn">Save</button>
+    <button id="closeBtn">Cancel</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
